@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script type = "text/javascript" src="script.js"></script>
+        <title> Welcome to Admin Portal page </title>
+    </head>
+    <body>
+        Welcome to Admin Portal page
+        <script>
+        window.onload=function()
+        {
+            var userType = sessionStorage.getItem('userType');
+            if (!userType || userType != 'admin')
+            {
+                window.location.href ='login.html';
+            }
+
+        }
+        </script>
+    </body>
+</html>

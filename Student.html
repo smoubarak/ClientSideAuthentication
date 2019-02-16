@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <script type = "text/javascript" src="script.js"></script>
+        <title> Welcome to Students Portal page </title>
+    </head>
+    <body>
+        
+        <script>
+            window.onload=function()
+            {
+                var userType = sessionStorage.getItem('userType');
+                if (!userType || userType != 'student')
+                {
+                    window.location.href ='Student.html';
+                }
+    
+            }
+            </script>
+    </body>
+</html>
